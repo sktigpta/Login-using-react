@@ -74,12 +74,10 @@ const Login = () => {
         <div className="parent-center">
             <section className="container">
                 <div>
-                    <h2 style={{ margin: "0.5em 0" }}>Welcome back!</h2>
+                    <h2 style={{ margin: "0.3em 0" }}>Welcome back!</h2>
 
                     <form onSubmit={handleSubmit}>
 
-                        <div className="flex-clm">
-                            <label htmlFor="email">Email Address</label>
                             <input type="text"
                                 name="email"
                                 placeholder="Email Address"
@@ -89,7 +87,6 @@ const Login = () => {
                                 autoCapitalize="no"
                             />
 
-                            <label htmlFor="password">Password</label>
                             <input type="password"
                                 name="password"
                                 placeholder="Password"
@@ -98,11 +95,11 @@ const Login = () => {
                                 onChange={handleInput}
                             />
                             <button style={{ marginTop: "2em" }} type="submit">Login</button>
-                        </div>
+                     
 
                     </form>
                 </div>
-                <div className="ask-user">
+                <div style={{display:"flex" , flexDirection:"row", gap:"1em"}}>
                     <p> Don't have an account</p>
                     <p className="bld"><Link className="li" to="/register">Register</Link></p>
                 </div>

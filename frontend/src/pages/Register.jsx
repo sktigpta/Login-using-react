@@ -24,7 +24,7 @@ const Register = () => {
             [name]: value,
         })
     }
-    
+
 
     const navigate = useNavigate()
 
@@ -62,67 +62,57 @@ const Register = () => {
         <div className="parent-center">
             <section className="container">
                 <div>
-                    <div style={{ display: "flex", flexDirection: "row", width: "100%", alignItems: "center", gap: "0.5em" }}>
-                        <GiArchiveRegister fontSize="2em" />
-                        <h2 style={{ margin: "0.5em 0" }}>Register here</h2>
-                    </div>
-
+                    <h2 style={{ margin: "0.3em 0" }}>Register here</h2>
                     <form onSubmit={handleSubmit}>
-                        <div className="flex-clm">
-                            <label htmlFor="fullname">Full Name</label>
-                            <input type="text"
-                                name="fullname"
-                                placeholder="Full Name"
-                                autoComplete="off"
-                                value={user.fullname}
-                                onChange={handleInput}
-                                required="true"
-                            />
+                        <input type="text"
+                            name="fullname"
+                            placeholder="Full Name"
+                            autoComplete="off"
+                            value={user.fullname}
+                            onChange={handleInput}
+                            required="true"
+                        />
 
-                            <label htmlFor="username">Username</label>
-                            <input type="username"
-                                name="username"
-                                placeholder="Username"
-                                autoComplete="off"
-                                value={user.username}
-                                onChange={handleInput}
-                                required="true"
-                            />
+                        <input type="username"
+                            name="username"
+                            placeholder="Username"
+                            autoComplete="off"
+                            value={user.username}
+                            onChange={handleInput}
+                            required="true"
+                        />
 
-                            <label htmlFor="email">Email Address</label>
-                            <input type="email"
-                                name="email"
-                                placeholder="Email Address"
-                                autoComplete="off"
-                                value={user.email}
-                                onChange={handleInput}
-                                required="true"
-                            />
+                        <input type="email"
+                            name="email"
+                            placeholder="Email Address"
+                            autoComplete="off"
+                            value={user.email}
+                            onChange={handleInput}
+                            required="true"
+                        />
 
-                            <label htmlFor="phone">Phone Number</label>
-                            <input type="text"
-                                name="phone"
-                                placeholder="Phone Number"
-                                autoComplete="off"
-                                value={user.phone}
-                                onChange={handleInput}
-                                required="true"
-                            />
+                        <input type="text"
+                            name="phone"
+                            placeholder="Phone Number"
+                            autoComplete="off"
+                            value={user.phone}
+                            onChange={handleInput}
+                            required="true"
+                        />
 
-                            <label htmlFor="password">Password</label>
-                            <input type="password"
-                                name="password"
-                                placeholder="Password"
-                                autoComplete=" off"
-                                value={user.password}
-                                onChange={handleInput}
-                                required="true"
-                            />
-                            <button style={{ marginTop: "2em" }} type="submit">Register</button>
-                        </div>
+                        <input type="password"
+                            name="password"
+                            placeholder="Password"
+                            autoComplete=" off"
+                            value={user.password}
+                            onChange={handleInput}
+                            required="true"
+                        />
+                        <button style={{ marginTop: "2em" }} type="submit">Register</button>
+
                     </form>
                 </div>
-                <div className="ask-user">
+                <div style={{ display: "flex", flexDirection: "row", gap: "1em" }}>
                     <p>Already have an account</p>
                     <p className="bld"><Link className="li" to="/login">Login</Link></p>
                 </div>
