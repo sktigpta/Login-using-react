@@ -24,6 +24,7 @@ const Register = () => {
             [name]: value,
         })
     }
+    
 
     const navigate = useNavigate()
 
